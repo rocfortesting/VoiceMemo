@@ -15,6 +15,8 @@
 		D8B85FBF1F74F9100006B200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B85FBD1F74F9100006B200 /* LaunchScreen.storyboard */; };
 		D8B85FCA1F74F9100006B200 /* VoiceMemo_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FC91F74F9100006B200 /* VoiceMemo_iOSTests.swift */; };
 		D8B85FD51F74F9110006B200 /* VoiceMemo_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FD41F74F9110006B200 /* VoiceMemo_iOSUITests.swift */; };
+		D8B85FE61F74F9FB0006B200 /* UIColor+VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FE51F74F9FB0006B200 /* UIColor+VoiceMemo.swift */; };
+		D8B85FE81F74FABC0006B200 /* UIFont+VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FE71F74FABC0006B200 /* UIFont+VoiceMemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D8B85FD01F74F9110006B200 /* VoiceMemo-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VoiceMemo-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B85FD41F74F9110006B200 /* VoiceMemo_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemo_iOSUITests.swift; sourceTree = "<group>"; };
 		D8B85FD61F74F9110006B200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B85FE51F74F9FB0006B200 /* UIColor+VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+VoiceMemo.swift"; sourceTree = "<group>"; };
+		D8B85FE71F74FABC0006B200 /* UIFont+VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+VoiceMemo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,9 @@
 		D8B85FB01F74F9100006B200 /* VoiceMemo-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D8B85FE41F74F9E70006B200 /* Extensions */,
+				D8B85FE21F74F9AC0006B200 /* ViewControllers */,
 				D8B85FB11F74F9100006B200 /* AppDelegate.swift */,
-				D8B85FB31F74F9100006B200 /* ViewController.swift */,
-				D8B85FB51F74F9100006B200 /* Main.storyboard */,
 				D8B85FBB1F74F9100006B200 /* Assets.xcassets */,
 				D8B85FBD1F74F9100006B200 /* LaunchScreen.storyboard */,
 				D8B85FC01F74F9100006B200 /* Info.plist */,
@@ -126,6 +130,32 @@
 				D8B85FD61F74F9110006B200 /* Info.plist */,
 			);
 			path = "VoiceMemo-iOSUITests";
+			sourceTree = "<group>";
+		};
+		D8B85FE21F74F9AC0006B200 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8B85FE31F74F9D10006B200 /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D8B85FE31F74F9D10006B200 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D8B85FB31F74F9100006B200 /* ViewController.swift */,
+				D8B85FB51F74F9100006B200 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D8B85FE41F74F9E70006B200 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8B85FE51F74F9FB0006B200 /* UIColor+VoiceMemo.swift */,
+				D8B85FE71F74FABC0006B200 /* UIFont+VoiceMemo.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +294,8 @@
 			files = (
 				D8B85FB41F74F9100006B200 /* ViewController.swift in Sources */,
 				D8B85FB21F74F9100006B200 /* AppDelegate.swift in Sources */,
+				D8B85FE61F74F9FB0006B200 /* UIColor+VoiceMemo.swift in Sources */,
+				D8B85FE81F74FABC0006B200 /* UIFont+VoiceMemo.swift in Sources */,
 				D8B85FBA1F74F9100006B200 /* VoiceMemo_iOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
