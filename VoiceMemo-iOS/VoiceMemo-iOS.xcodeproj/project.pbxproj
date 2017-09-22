@@ -17,6 +17,7 @@
 		D8B85FD51F74F9110006B200 /* VoiceMemo_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FD41F74F9110006B200 /* VoiceMemo_iOSUITests.swift */; };
 		D8B85FE61F74F9FB0006B200 /* UIColor+VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FE51F74F9FB0006B200 /* UIColor+VoiceMemo.swift */; };
 		D8B85FE81F74FABC0006B200 /* UIFont+VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FE71F74FABC0006B200 /* UIFont+VoiceMemo.swift */; };
+		D8B85FEB1F74FCE80006B200 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FEA1F74FCE80006B200 /* Configs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D8B85FD61F74F9110006B200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8B85FE51F74F9FB0006B200 /* UIColor+VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+VoiceMemo.swift"; sourceTree = "<group>"; };
 		D8B85FE71F74FABC0006B200 /* UIFont+VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+VoiceMemo.swift"; sourceTree = "<group>"; };
+		D8B85FEA1F74FCE80006B200 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		D8B85FB01F74F9100006B200 /* VoiceMemo-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D8B85FE91F74FCDC0006B200 /* Helper */,
 				D8B85FE41F74F9E70006B200 /* Extensions */,
 				D8B85FE21F74F9AC0006B200 /* ViewControllers */,
 				D8B85FB11F74F9100006B200 /* AppDelegate.swift */,
@@ -156,6 +159,14 @@
 				D8B85FE71F74FABC0006B200 /* UIFont+VoiceMemo.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D8B85FE91F74FCDC0006B200 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D8B85FEA1F74FCE80006B200 /* Configs.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 				D8B85FE61F74F9FB0006B200 /* UIColor+VoiceMemo.swift in Sources */,
 				D8B85FE81F74FABC0006B200 /* UIFont+VoiceMemo.swift in Sources */,
 				D8B85FBA1F74F9100006B200 /* VoiceMemo_iOS.xcdatamodeld in Sources */,
+				D8B85FEB1F74FCE80006B200 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
