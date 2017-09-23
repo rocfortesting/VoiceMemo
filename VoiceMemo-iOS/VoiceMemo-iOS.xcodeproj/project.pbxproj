@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D86C64F71F752CB600E7AF51 /* DispatchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C64F61F752CB600E7AF51 /* DispatchTimer.swift */; };
+		D86C64F91F753AAF00E7AF51 /* AccessChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C64F81F753AAF00E7AF51 /* AccessChecker.swift */; };
+		D86C64FB1F753EF200E7AF51 /* PrintLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C64FA1F753EF200E7AF51 /* PrintLog.swift */; };
+		D86C65021F7567C100E7AF51 /* VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C65011F7567C100E7AF51 /* VoiceMemo.swift */; };
+		D88F44511F7576BE00F8FD35 /* VoiceMemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F44501F7576BE00F8FD35 /* VoiceMemoListViewController.swift */; };
+		D88F44551F762B6500F8FD35 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F44541F762B6500F8FD35 /* Reusable.swift */; };
+		D88F44581F762EA000F8FD35 /* VoiceMemoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F44571F762EA000F8FD35 /* VoiceMemoListCell.swift */; };
+		D88F445A1F76449800F8FD35 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88F44591F76449800F8FD35 /* CoreDataManager.swift */; };
 		D8B85FB21F74F9100006B200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FB11F74F9100006B200 /* AppDelegate.swift */; };
 		D8B85FB41F74F9100006B200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FB31F74F9100006B200 /* ViewController.swift */; };
 		D8B85FB71F74F9100006B200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B85FB51F74F9100006B200 /* Main.storyboard */; };
@@ -18,6 +26,13 @@
 		D8B85FE61F74F9FB0006B200 /* UIColor+VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FE51F74F9FB0006B200 /* UIColor+VoiceMemo.swift */; };
 		D8B85FE81F74FABC0006B200 /* UIFont+VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FE71F74FABC0006B200 /* UIFont+VoiceMemo.swift */; };
 		D8B85FEB1F74FCE80006B200 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FEA1F74FCE80006B200 /* Configs.swift */; };
+		D8B85FED1F7500E30006B200 /* UIImage+VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FEC1F7500E30006B200 /* UIImage+VoiceMemo.swift */; };
+		D8B85FF01F7503AF0006B200 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FEF1F7503AF0006B200 /* RecordButton.swift */; };
+		D8B85FF31F750A880006B200 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FF21F750A880006B200 /* AudioManager.swift */; };
+		D8B85FF71F750C990006B200 /* FileManager+VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FF61F750C990006B200 /* FileManager+VoiceMemo.swift */; };
+		D8B85FF91F750D600006B200 /* Date+VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B85FF81F750D600006B200 /* Date+VoiceMemo.swift */; };
+		D8C389181F76583200DE6D56 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C389171F76583200DE6D56 /* PlayButton.swift */; };
+		D8C3891A1F7658A000DE6D56 /* VoiceMemoBasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C389191F7658A000DE6D56 /* VoiceMemoBasicButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D86C64F61F752CB600E7AF51 /* DispatchTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchTimer.swift; sourceTree = "<group>"; };
+		D86C64F81F753AAF00E7AF51 /* AccessChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessChecker.swift; sourceTree = "<group>"; };
+		D86C64FA1F753EF200E7AF51 /* PrintLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintLog.swift; sourceTree = "<group>"; };
+		D86C65011F7567C100E7AF51 /* VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemo.swift; sourceTree = "<group>"; };
+		D88F44501F7576BE00F8FD35 /* VoiceMemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoListViewController.swift; sourceTree = "<group>"; };
+		D88F44541F762B6500F8FD35 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		D88F44571F762EA000F8FD35 /* VoiceMemoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoListCell.swift; sourceTree = "<group>"; };
+		D88F44591F76449800F8FD35 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		D8B85FAE1F74F9100006B200 /* VoiceMemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VoiceMemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B85FB11F74F9100006B200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8B85FB31F74F9100006B200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +78,13 @@
 		D8B85FE51F74F9FB0006B200 /* UIColor+VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+VoiceMemo.swift"; sourceTree = "<group>"; };
 		D8B85FE71F74FABC0006B200 /* UIFont+VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+VoiceMemo.swift"; sourceTree = "<group>"; };
 		D8B85FEA1F74FCE80006B200 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		D8B85FEC1F7500E30006B200 /* UIImage+VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+VoiceMemo.swift"; sourceTree = "<group>"; };
+		D8B85FEF1F7503AF0006B200 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		D8B85FF21F750A880006B200 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		D8B85FF61F750C990006B200 /* FileManager+VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+VoiceMemo.swift"; sourceTree = "<group>"; };
+		D8B85FF81F750D600006B200 /* Date+VoiceMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+VoiceMemo.swift"; sourceTree = "<group>"; };
+		D8C389171F76583200DE6D56 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		D8C389191F7658A000DE6D56 /* VoiceMemoBasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoBasicButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +112,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D86C64FC1F75677600E7AF51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D86C65011F7567C100E7AF51 /* VoiceMemo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D88F44521F7576C400F8FD35 /* VoiceMemoList */ = {
+			isa = PBXGroup;
+			children = (
+				D88F44501F7576BE00F8FD35 /* VoiceMemoListViewController.swift */,
+			);
+			path = VoiceMemoList;
+			sourceTree = "<group>";
+		};
+		D88F44531F762B5500F8FD35 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D88F44541F762B6500F8FD35 /* Reusable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D88F44561F762E8200F8FD35 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D88F44571F762EA000F8FD35 /* VoiceMemoListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D8B85FA51F74F9100006B200 = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +167,13 @@
 		D8B85FB01F74F9100006B200 /* VoiceMemo-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D8B85FE91F74FCDC0006B200 /* Helper */,
+				D88F44531F762B5500F8FD35 /* Protocols */,
+				D86C64FC1F75677600E7AF51 /* Models */,
+				D8B85FE91F74FCDC0006B200 /* Helpers */,
 				D8B85FE41F74F9E70006B200 /* Extensions */,
 				D8B85FE21F74F9AC0006B200 /* ViewControllers */,
+				D8B85FEE1F75038B0006B200 /* Views */,
+				D8B85FF11F750A770006B200 /* Managers */,
 				D8B85FB11F74F9100006B200 /* AppDelegate.swift */,
 				D8B85FBB1F74F9100006B200 /* Assets.xcassets */,
 				D8B85FBD1F74F9100006B200 /* LaunchScreen.storyboard */,
@@ -139,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				D8B85FE31F74F9D10006B200 /* Main */,
+				D88F44521F7576C400F8FD35 /* VoiceMemoList */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -157,16 +224,42 @@
 			children = (
 				D8B85FE51F74F9FB0006B200 /* UIColor+VoiceMemo.swift */,
 				D8B85FE71F74FABC0006B200 /* UIFont+VoiceMemo.swift */,
+				D8B85FEC1F7500E30006B200 /* UIImage+VoiceMemo.swift */,
+				D8B85FF61F750C990006B200 /* FileManager+VoiceMemo.swift */,
+				D8B85FF81F750D600006B200 /* Date+VoiceMemo.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		D8B85FE91F74FCDC0006B200 /* Helper */ = {
+		D8B85FE91F74FCDC0006B200 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				D8B85FEA1F74FCE80006B200 /* Configs.swift */,
+				D86C64F61F752CB600E7AF51 /* DispatchTimer.swift */,
+				D86C64F81F753AAF00E7AF51 /* AccessChecker.swift */,
+				D86C64FA1F753EF200E7AF51 /* PrintLog.swift */,
 			);
-			path = Helper;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D8B85FEE1F75038B0006B200 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D88F44561F762E8200F8FD35 /* Cells */,
+				D8B85FEF1F7503AF0006B200 /* RecordButton.swift */,
+				D8C389191F7658A000DE6D56 /* VoiceMemoBasicButton.swift */,
+				D8C389171F76583200DE6D56 /* PlayButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8B85FF11F750A770006B200 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D8B85FF21F750A880006B200 /* AudioManager.swift */,
+				D88F44591F76449800F8FD35 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +396,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88F44551F762B6500F8FD35 /* Reusable.swift in Sources */,
+				D8C389181F76583200DE6D56 /* PlayButton.swift in Sources */,
+				D86C64F91F753AAF00E7AF51 /* AccessChecker.swift in Sources */,
+				D88F44511F7576BE00F8FD35 /* VoiceMemoListViewController.swift in Sources */,
+				D88F445A1F76449800F8FD35 /* CoreDataManager.swift in Sources */,
+				D8B85FF01F7503AF0006B200 /* RecordButton.swift in Sources */,
 				D8B85FB41F74F9100006B200 /* ViewController.swift in Sources */,
 				D8B85FB21F74F9100006B200 /* AppDelegate.swift in Sources */,
+				D8B85FED1F7500E30006B200 /* UIImage+VoiceMemo.swift in Sources */,
 				D8B85FE61F74F9FB0006B200 /* UIColor+VoiceMemo.swift in Sources */,
+				D8B85FF91F750D600006B200 /* Date+VoiceMemo.swift in Sources */,
 				D8B85FE81F74FABC0006B200 /* UIFont+VoiceMemo.swift in Sources */,
+				D8C3891A1F7658A000DE6D56 /* VoiceMemoBasicButton.swift in Sources */,
+				D86C64F71F752CB600E7AF51 /* DispatchTimer.swift in Sources */,
+				D86C65021F7567C100E7AF51 /* VoiceMemo.swift in Sources */,
+				D8B85FF31F750A880006B200 /* AudioManager.swift in Sources */,
+				D86C64FB1F753EF200E7AF51 /* PrintLog.swift in Sources */,
+				D88F44581F762EA000F8FD35 /* VoiceMemoListCell.swift in Sources */,
 				D8B85FBA1F74F9100006B200 /* VoiceMemo_iOS.xcdatamodeld in Sources */,
+				D8B85FF71F750C990006B200 /* FileManager+VoiceMemo.swift in Sources */,
 				D8B85FEB1F74FCE80006B200 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
