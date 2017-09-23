@@ -36,7 +36,6 @@ class AudioManager: NSObject {
             let minute = time % 3600 / 60
             let second = time % 60
             
-            printLog("AudioRecorderTime: \(time)")
             return String(format: "%02d:%02d:%02d", hour, minute, second)
         }
     }
@@ -49,7 +48,6 @@ class AudioManager: NSObject {
             let minute = time % 3600 / 60
             let second = time % 60
             
-            printLog("AudioPlayerTime: \(time)")
             return String(format: "%02d:%02d:%02d", hour, minute, second)
         }
     }
@@ -63,7 +61,6 @@ class AudioManager: NSObject {
         super.init()
         
         audioRecorder.delegate = self
-        audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
     }
     
@@ -121,7 +118,6 @@ class AudioManager: NSObject {
             let url = FileManager.generateURLForPlaying(name: memo.name)
             shared.audioPlayer = try AVAudioPlayer(contentsOf: url)
             shared.audioPlayer?.delegate = shared
-            printLog("Set Play Completion")
             shared.playingCompletion = completion
             shared.audioPlayer?.play()
         } catch {

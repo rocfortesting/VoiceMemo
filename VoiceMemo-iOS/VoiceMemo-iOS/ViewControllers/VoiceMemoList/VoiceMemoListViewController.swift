@@ -94,7 +94,7 @@ class VoiceMemoListViewController: UIViewController {
             guard let objects = fetchResultsController?.fetchedObjects else { return }
             memos = objects.map({ VoiceMemo(name: $0.name ?? "") })
         } catch {
-            print(error.localizedDescription)
+            printLog(error.localizedDescription)
         }
     }
     
@@ -112,13 +112,9 @@ class VoiceMemoListViewController: UIViewController {
                 guard let cell = strongSelf.tableView.cellForRow(at: indexPath) as? VoiceMemoListCell else { return }
                 
                 strongSelf.isPlaying = false
-                
-                printLog("Excute Play Completion Block: \(indexPath), name:\(cell.titleLabel.text), state: \(cell.state)")
-                
                 cell.state = .tapToPlay
-                
-                printLog("After State:\(cell.state)")
             })
+            
             isPlaying = true
             if let cell = tableView.cellForRow(at: indexPath) as? VoiceMemoListCell {
                 cell.state = .tapToStop
@@ -142,8 +138,6 @@ class VoiceMemoListViewController: UIViewController {
             AudioManager.stopPlay()
             playItem(of: currentIndexPath)
         }
-        
-        printLog("\(lastIndexPath?.row), \(currentIndexPath.row), \(isPlaying)")
     }
 
 }

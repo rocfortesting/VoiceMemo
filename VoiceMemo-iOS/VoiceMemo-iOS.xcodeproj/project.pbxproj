@@ -115,6 +115,7 @@
 		D86C64FC1F75677600E7AF51 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D8B85FB81F74F9100006B200 /* VoiceMemo_iOS.xcdatamodeld */,
 				D86C65011F7567C100E7AF51 /* VoiceMemo.swift */,
 			);
 			path = Models;
@@ -142,6 +143,16 @@
 				D88F44571F762EA000F8FD35 /* VoiceMemoListCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D89053FC1F76D6BA00B0B50C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D8B85FEF1F7503AF0006B200 /* RecordButton.swift */,
+				D8C389191F7658A000DE6D56 /* VoiceMemoBasicButton.swift */,
+				D8C389171F76583200DE6D56 /* PlayButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		D8B85FA51F74F9100006B200 = {
@@ -178,7 +189,6 @@
 				D8B85FBB1F74F9100006B200 /* Assets.xcassets */,
 				D8B85FBD1F74F9100006B200 /* LaunchScreen.storyboard */,
 				D8B85FC01F74F9100006B200 /* Info.plist */,
-				D8B85FB81F74F9100006B200 /* VoiceMemo_iOS.xcdatamodeld */,
 			);
 			path = "VoiceMemo-iOS";
 			sourceTree = "<group>";
@@ -246,9 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				D88F44561F762E8200F8FD35 /* Cells */,
-				D8B85FEF1F7503AF0006B200 /* RecordButton.swift */,
-				D8C389191F7658A000DE6D56 /* VoiceMemoBasicButton.swift */,
-				D8C389171F76583200DE6D56 /* PlayButton.swift */,
+				D89053FC1F76D6BA00B0B50C /* Buttons */,
 			);
 			path = Views;
 			sourceTree = "<group>";

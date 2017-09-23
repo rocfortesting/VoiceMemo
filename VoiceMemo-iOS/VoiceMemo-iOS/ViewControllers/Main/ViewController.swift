@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         label.textColor = .white
         label.lineBreakMode = .byTruncatingTail
         
-        
         return label
     }()
     
