@@ -28,9 +28,22 @@ class VoiceMemo_iOSUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testUnderAlreadyGotPermissionCase () {
+        let app = XCUIApplication()
+        let element2 = app.otherElements.containing(.navigationBar, identifier:"Voice Memo").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        let element = element2.children(matching: .other).element
+        element.tap()
+        
+        let alert = app.alerts["是否保存？"]
+        let button = alert.buttons["是"]
+        button.tap()
+        element2.children(matching: .other).element(boundBy: 0).tap()
+        alert.buttons["否"].tap()
+        element.tap()
+        button.tap()
+        element2.children(matching: .other).element(boundBy: 1).tap()
+        app.navigationBars["Voice Memo"].buttons["列表"].tap()
+        app.navigationBars.buttons["Voice Memo"].tap()
     }
     
 }

@@ -7,13 +7,17 @@
 //
 
 import XCTest
+import CoreData
 @testable import VoiceMemo_iOS
 
 class VoiceMemo_iOSTests: XCTestCase {
     
+    var context: NSManagedObjectContext?
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        context = CoreDataManager.shared.persistentContainer.viewContext
     }
     
     override func tearDown() {
@@ -22,8 +26,11 @@ class VoiceMemo_iOSTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        _ = FileManager.generateURLForRecordingCache()
+        _ = FileManager.generateURLForRecording()
+        _ = FileManager.generateURLForPlaying(name: "Test")
+        
+        XCTAssertNotNil(context)
     }
     
     func testPerformanceExample() {
