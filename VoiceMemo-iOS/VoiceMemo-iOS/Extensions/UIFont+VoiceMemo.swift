@@ -11,5 +11,7 @@ import UIKit
 extension UIFont {
     
     static let voiceMemoTitleFont = UIFont.systemFont(ofSize: 50, weight: .bold)
+    static let voiceMemoSubTitleFont = UIFont.systemFont(ofSize: 20, weight: .semibold)
+    static let voiceMemoListCellTitleFont = UIFont.systemFont(ofSize: 18, weight: .semibold)
     
 }
