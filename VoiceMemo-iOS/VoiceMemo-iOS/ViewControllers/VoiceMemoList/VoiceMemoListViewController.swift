@@ -109,10 +109,11 @@ class VoiceMemoListViewController: UIViewController {
             
             try AudioManager.play(with: memo, completion: { [weak self] (flag) in
                 guard let strongSelf = self else { return }
-                guard let cell = strongSelf.tableView.cellForRow(at: indexPath) as? VoiceMemoListCell else { return }
                 
                 strongSelf.isPlaying = false
-                cell.state = .tapToPlay
+                if let cell = strongSelf.tableView.cellForRow(at: indexPath) as? VoiceMemoListCell {
+                    cell.state = .tapToPlay
+                }
             })
             
             isPlaying = true
@@ -180,18 +181,13 @@ extension VoiceMemoListViewController: UITableViewDelegate, UITableViewDataSourc
         case .memo:
             let cell: VoiceMemoListCell = tableView.dequeueReusableCell()
             let item = memos[indexPath.row]
-            
             cell.configCell(with: item)
+            
+            if indexPath == currentPlayingIndexPath {
+                cell.state = isPlaying ? .tapToStop : .tapToPlay
+            }
+            
             return cell
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let section = Sections(rawValue: indexPath.section) else { return }
-        switch section {
-        case .memo:
-            guard indexPath == currentPlayingIndexPath, let cell = cell as? VoiceMemoListCell else { break }
-            cell.state = isPlaying ? .tapToStop : .tapToPlay
         }
     }
     
