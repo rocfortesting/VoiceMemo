@@ -34,6 +34,9 @@ class RecordButton: VoiceMemoBasicButton {
         super.touchesCancelled(touches, with: event)
         
         iconImageView.alpha = 1
+        UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
+            self.iconImageView.transform = .identity
+        }, completion: nil)
     }
     
     

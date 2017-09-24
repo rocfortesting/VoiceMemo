@@ -16,6 +16,8 @@ class VoiceMemoBasicButton: UIView {
     
     var touchesEndedAction: (() -> Void)?
     
+    var touchesCancelledAction: (() -> Void)?
+    
     
     // MARK: UI Elements
     
@@ -43,7 +45,7 @@ class VoiceMemoBasicButton: UIView {
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesCancelled(touches, with: event)
         
-        iconImageView.alpha = 1
+        touchesCancelledAction?()
     }
     
     
