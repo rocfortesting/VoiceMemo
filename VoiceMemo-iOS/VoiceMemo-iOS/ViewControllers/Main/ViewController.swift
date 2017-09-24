@@ -90,6 +90,14 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if currentState == .recording {
+            stopRecord()
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -152,6 +160,12 @@ class ViewController: UIViewController {
         }
         
         recordButton.touchesEndedAction = { [weak self] in
+            guard let strongSelf = self else { return }
+            
+            strongSelf.stopRecord()
+        }
+        
+        recordButton.touchesCancelledAction = { [weak self] in
             guard let strongSelf = self else { return }
             
             strongSelf.stopRecord()
